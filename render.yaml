@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: django-app
+    env: python
+    plan: free 
+    buildCommand: pip install -r labs5-6/requirements.txt
+    startCommand: gunicorn your_project_name.wsgi --log-file -
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: your_project_name.settings
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DATABASE_URL
+        value: mysql://lab5:010405@mysdb.internal:3306/lab5  # Внутрішній хост бази даних
+    autoDeploy: true
+

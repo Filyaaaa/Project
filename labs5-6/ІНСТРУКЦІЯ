@@ -1,0 +1,5 @@
+ІНСТРУКЦІЯ
+1.УВІЙТИ У ВІРТУАЛЬНЕ СЕРОДИЩЕ cd venv/bin   написати команду source activate  
+cd
+2.ЗАПУСТИТИ ФАЙЛ python3 manage.py runserver
+ЛОГІН ТА ПАРОЛЬ admin   12345

@@ -1,0 +1,7 @@
+gensim
+nltk
+numpy
+scikit-learn
+mysql-connector-python
+django
+matplotlib
